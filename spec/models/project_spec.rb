@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Project, type: :model do
 
   # ユーザー単位では重複したプロジェクト名を許可しないこと
-  it "does not allow duplicate project names per user" do
+  it "1-1.does not allow duplicate project names per user" do
     user = User.create(
       first_name: "Joe",
       last_name: "Tester",
